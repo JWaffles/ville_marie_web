@@ -1,22 +1,25 @@
-img[class="header_logo"] {
+.header_logo {
     float: left;
+    top: 0;
+    left: 0;
+    
 }
 
-h1 {
+.header_title {
     position: relative;
-    color: navy;
-    size: 33px;
+    color: #1986fa;
+    font-size: 33px;
 }
 
-ul[class="header_menu"] {
+ul.header_menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #1986fa;
 }
 
-li[class="header_menu"] {
+li.header_menu {
     float: left;
 }
 
@@ -32,7 +35,7 @@ li[class="header_menu"] a:hover {
     background-color: #111;
 }
 
-input[type=submit] {
+#header_login_button {
     background-color: #4286f4;
     border: none;
     color: white;
@@ -46,7 +49,7 @@ input[type=submit] {
     right: 0;
 }
 
-input[type=submit]:hover {
+#header_login_button:hover {
     background-color: transparent;
     border: 1px solid black;
     color: black;

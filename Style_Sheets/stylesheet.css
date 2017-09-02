@@ -1,6 +1,111 @@
-/*****
-******    This section is for About us/ Meet the team
-******
+/***********************************************************
+******    General
+************************************************************
+******/
+body {
+    background-color: #d1b66d;
+}
+
+/* Main page title */
+h1 {
+    font-family: sans-serif;
+    font-size: 36px;
+    color: #1986fa;
+    font-weight: normal;
+}
+
+/* Title of the subpage */
+h2 {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #1986fa;
+    font-weight: bold;
+}
+
+/* Title of articles */
+h3 {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #1986fa;
+    font-weight: bold italic;
+}
+
+/* Common paragraph */
+p {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #1986fa;
+    font-weight: normal;
+}
+
+/* Lesser important common paragraph */
+p2 {
+    font-family: sans-serif;
+    font-size: 10px;
+    color: #1986fa;
+    font-weight: normal;
+}
+
+
+/***********************************************************
+******    Home
+************************************************************
+******/
+.home_wrapper{
+    display: block;
+}
+
+.home_maincontent{
+    width: 75%;
+    float: left;
+    padding: 10px;
+}
+
+.home_rightside{
+    width: 20%;
+    float: right;
+    padding: 5px;
+}
+
+.highlight_container {
+    padding: 5px;
+    margin: 5px;
+    display: block;
+}
+
+.highlight_picture {
+    height: 100px;
+    float: left;
+    margin-right: 5px;
+}
+
+.highlight_text{
+    width: 80%;
+}
+
+.highlight_topline {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.highlight_title {
+    float: left;
+}
+
+.highlight_date {
+    float: right;
+}
+
+.highlight_content {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+/***********************************************************
+******    About us
+************************************************************
 ******/
 /* Three columns side by side */
 .column {
@@ -39,10 +144,20 @@
 .title {
     color: #414347;
 }
+/***********************************************************
+******    Events
+************************************************************
+******/
 
-/*****
-******    This section is for Contact us
-******
+/***********************************************************
+******    How to help
+************************************************************
+******/
+
+
+/***********************************************************
+******    Contact us
+************************************************************
 ******/
 
 /* Style inputs with type="text", select elements and textareas */
