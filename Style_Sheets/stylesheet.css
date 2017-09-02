@@ -1,0 +1,92 @@
+/*****
+******    This section is for About us/ Meet the team
+******
+******/
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 18%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.about_container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.about_container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* This is the title of person */
+.title {
+    color: #414347;
+}
+
+/*****
+******    This section is for Contact us
+******
+******/
+
+/* Style inputs with type="text", select elements and textareas */
+select, textarea {
+    width: 50%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+}
+
+.left {
+    margin-bottom: 5px;
+    width: 35%;
+    float: left;
+    text-align: right;
+}
+.right {
+    margin-bottom: 5px;
+    width: 50%;
+    margin-left: 10px;
+    float:left;
+}
+
+/* Style the submit button with a specific background color etc */
+#contact_us_submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+#contact_us_submit:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact_us_container {
+    width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
