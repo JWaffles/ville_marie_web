@@ -46,31 +46,114 @@ p2 {
     font-weight: normal;
 }
 
+/***********************************************************
+******    Header / Footer
+************************************************************
+******/
+
+.header_top_section {
+    display: block;
+}
+
+.header_logo {
+    float: left;
+    top: 0;
+    left: 0;
+    margin: 3px;
+    
+}
+
+.header_title {
+    position: relative;
+    margin: 5px;
+}
+
+ul.header_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1986fa;
+    border-radius: 10px;
+}
+
+li.header_menu {
+    float: left;
+}
+
+li[class="header_menu"] a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+li[class="header_menu"] a:hover {
+    background-color: #0042b6;
+    border-radius: 10px;
+}
+
+#header_login_button {
+    float: right;
+    background-color: #4286f4;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header_login_button:hover {
+    background-color: #0042b6;
+    border: 1px solid black;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.footer {
+    width: 100%;
+}
 
 /***********************************************************
 ******    Home
 ************************************************************
 ******/
+/*Entire home page*/
 .home_wrapper{
     display: block;
 }
 
+/*Only the left section*/
 .home_maincontent{
     width: 75%;
     float: left;
     padding: 10px;
+    border-radius: 10px;
+    
+    background-color: #ffe9aa;
+    box-shadow: -1px -1px 10px 2px #1986fa;
+    padding: 1px 10px 10px 10px;
 }
 
-.home_rightside{
-    width: 20%;
-    float: right;
-    padding: 5px;
-}
-
+/*One highlight option (includes the picture, title, date, and content*/
 .highlight_container {
     padding: 5px;
     margin: 5px;
     display: block;
+    background-color: #ffe9ad;
 }
 
 .highlight_picture {
@@ -79,10 +162,12 @@ p2 {
     margin-right: 5px;
 }
 
+/*Includes title, date, and content*/
 .highlight_text{
     width: 80%;
 }
 
+/*Both the title and date*/
 .highlight_topline {
     display: block;
     margin-bottom: 5px;
@@ -102,6 +187,14 @@ p2 {
     margin-top: 5px;
 }
 
+/*Only the right section*/
+.home_rightside{
+    width: 20%;
+    height: inherit;
+    float: right;
+    padding: 5px;
+    background-color: #ffe9aa;
+}
 
 /***********************************************************
 ******    About us
