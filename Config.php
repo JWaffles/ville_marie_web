@@ -26,5 +26,5 @@
     define('DB_PASSWORD', '3RV3QH2KBv');
     define('DB_DATABASE', 'ryaechuvpz');
     
-    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+    $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 ?>

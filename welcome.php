@@ -9,11 +9,16 @@
     </head>
     
     <body>
+        
         <h1>Welcome 
         <?php 
         echo "Login id: " . $_SESSION["login_user_id"] . ".<br/>";
         echo "Login name: " . $_SESSION["login_username"] . ".<br/>";
-        ?></h1>
+        ?>
+        </h1>
+        
+        
         <h2><a href = "logout.php">Sign out></a></h2>
+        
     </body>
 </html>

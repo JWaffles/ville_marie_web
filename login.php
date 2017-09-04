@@ -9,7 +9,7 @@
         $myusername = mysqli_real_escape_string($db,$_POST['username']);
         $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
-      $sql = "SELECT USER_ID FROM Users WHERE USER_NAME = '$myusername' and PASSWORD = '$mypassword'";
+      $sql = "SELECT USER_ID FROM Users WHERE USERNAME = '$myusername' and PASSWORD = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $active = $row['active'];
