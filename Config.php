@@ -1,5 +1,5 @@
 <?php
-    /**
+/**
     //Connect to the database
     $host = "35.185.5.176";
     $user = "ryaechuvpz";      
@@ -22,8 +22,8 @@
     define('DB_DATABASE', 'Ville_Marie');
 */
     define('DB_SERVER', '35.185.5.176');
-    define('DB_USERNAME', 'ryaechuvpz');
-    define('DB_PASSWORD', '3RV3QH2KBv');
+    define('DB_USERNAME', 'jerwaffles');
+    define('DB_PASSWORD', 'Caramsl1');
     define('DB_DATABASE', 'ryaechuvpz');
     
     $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
