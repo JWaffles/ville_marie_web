@@ -21,18 +21,12 @@
     define('DB_PASSWORD', '');
     define('DB_DATABASE', 'Ville_Marie');
 */
-    define('DB_SERVER', '35.185.5.176');
+    define('DB_SERVER', '127.0.0.1');
     define('DB_USERNAME', 'jerwaffles');
-    define('DB_PASSWORD', 'Caramsl1');
-    define('DB_DATABASE', 'ryaechuvpz');
+    define('DB_PASSWORD', '');
+    define('DB_DATABASE', 'Ville_Marie');
     
-    $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+    $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
     
-
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    } 
-    echo "Connected successfully";
 
 ?>

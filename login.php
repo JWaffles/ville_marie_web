@@ -9,8 +9,8 @@
         $myusername = mysqli_real_escape_string($db,$_POST['username']);
         $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
-      $sql = "SELECT USER_ID FROM Users WHERE USERNAME = '$myusername' and PASSWORD = '$mypassword'";
-      $result = mysqli_query($conn,$sql);
+      $sql = "SELECT USER_ID FROM Users WHERE USER_NAME = '$myusername' and PASSWORD = '$mypassword'";
+      $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $active = $row['active'];
       
@@ -23,9 +23,9 @@
          $_SESSION['login_user_id'] = $row["USER_ID"];
          $_SESSION['login_username'] = $myusername;
          
-         // header("Location: welcome.php");
          header ("HTTP/1.1 301 Moved Permanently"); 
-         header ("Location: http://www.cerclevillemarie.ca/welcome.php"); 
+         header ("Location: welcome.php");
+         // header ("Location: http://www.cerclevillemarie.ca/welcome.php"); 
          exit();
       }else {
          $error = "Your Login Name or Password is invalid";
