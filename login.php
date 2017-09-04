@@ -19,17 +19,20 @@
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       if($count == 1) {
-         session_register("myusername");
-         $_SESSION['login_user'] = $myusername;
+         // session_register("myusername");
+         $_SESSION['login_user_id'] = $row["USER_ID"];
+         $_SESSION['login_username'] = $myusername;
          
-         header("location: welcome.php");
+         // header("Location: welcome.php");
+         header ("HTTP/1.1 301 Moved Permanently"); 
+         header ("Location: welcome.php"); 
+         exit();
       }else {
          $error = "Your Login Name or Password is invalid";
       }
    }
 ?>
 <html>
-   
    <head>
       <title>Login Page</title>
       

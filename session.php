@@ -1,8 +1,8 @@
 <?php
-include('config.php');
+include('Config.php');
 session_start();
 
-$user_check = $_SESSION['login_user'];
+$user_check = $_SESSION['login_user_id'];
 
 $ses_sql = mysqli_query($db,"select USER_NAME from Users where USER_NAME = '$user_check' ");
    
@@ -10,7 +10,7 @@ $ses_sql = mysqli_query($db,"select USER_NAME from Users where USER_NAME = '$use
    
    $login_session = $row['USER_NAME'];
    
-   if(!isset($_SESSION['login_user'])){
-      header("location:login.php");
-   }
+   // if(!isset($_SESSION['login_user'])){
+   //    header("location:login.php");
+   // }
 ?>
