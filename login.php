@@ -25,7 +25,7 @@
          
          // header("Location: welcome.php");
          header ("HTTP/1.1 301 Moved Permanently"); 
-         header ("Location: welcome.php"); 
+         header ("Location: http://www.cerclevillemarie.ca/welcome.php"); 
          exit();
       }else {
          $error = "Your Login Name or Password is invalid";
