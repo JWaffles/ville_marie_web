@@ -1,0 +1,21 @@
+[04-Sep-2017 22:20:22 UTC] PHP Warning:  include(session.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Admin/welcome_admin.php on line 2
+[04-Sep-2017 22:20:22 UTC] PHP Stack trace:
+[04-Sep-2017 22:20:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/Admin/welcome_admin.php:0
+[04-Sep-2017 22:20:22 UTC] PHP Warning:  include(): Failed opening 'session.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Admin/welcome_admin.php on line 2
+[04-Sep-2017 22:20:22 UTC] PHP Stack trace:
+[04-Sep-2017 22:20:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/Admin/welcome_admin.php:0
+[04-Sep-2017 22:21:49 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/session.php on line 9
+[04-Sep-2017 22:21:49 UTC] PHP Stack trace:
+[04-Sep-2017 22:21:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/Admin/welcome_admin.php:0
+[04-Sep-2017 22:21:49 UTC] PHP   2. include() /home/ubuntu/workspace/Admin/welcome_admin.php:2
+[04-Sep-2017 22:21:49 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/session.php:9
+[04-Sep-2017 22:22:40 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/session.php on line 9
+[04-Sep-2017 22:22:40 UTC] PHP Stack trace:
+[04-Sep-2017 22:22:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/Admin/welcome_admin.php:0
+[04-Sep-2017 22:22:40 UTC] PHP   2. include() /home/ubuntu/workspace/Admin/welcome_admin.php:2
+[04-Sep-2017 22:22:40 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/session.php:9
+[04-Sep-2017 22:23:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/session.php on line 9
+[04-Sep-2017 22:23:59 UTC] PHP Stack trace:
+[04-Sep-2017 22:23:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/User/welcome_user.php:0
+[04-Sep-2017 22:23:59 UTC] PHP   2. include() /home/ubuntu/workspace/User/welcome_user.php:2
+[04-Sep-2017 22:23:59 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/session.php:9

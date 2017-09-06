@@ -11,9 +11,9 @@
 
     ////// Online database /////////
     define('DB_SERVER', '35.185.5.176');
-    define('DB_USERNAME', 'ryaechuvpz');
+    define('DB_USERNAME', 'wdrxfxeejk');
     define('DB_PASSWORD', '3RV3QH2KBv');
-    define('DB_DATABASE', 'ryaechuvpz');
+    define('DB_DATABASE', 'wdrxfxeejk');
 
     ////// Local database //////////
     define('DB_SERVER', '127.0.0.1');
@@ -21,12 +21,14 @@
     define('DB_PASSWORD', '');
     define('DB_DATABASE', 'Ville_Marie');
 */
-    define('DB_SERVER', '127.0.0.1');
-    define('DB_USERNAME', 'jerwaffles');
-    define('DB_PASSWORD', '');
-    define('DB_DATABASE', 'Ville_Marie');
     
-    $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+    $host = "104.207.159.189";
+    $user = "wdrxfxeejk";      
+    $pass = "tmmYwKbR9e";      
+    $db = "wdrxfxeejk";        
+    $port = 8082;   
+    
+    $db = mysqli_connect($host, $user, $pass, $db, $port)or die(mysql_error());
     
 
 ?>

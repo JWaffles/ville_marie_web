@@ -9,7 +9,7 @@
         $myusername = mysqli_real_escape_string($db,$_POST['username']);
         $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
-      $sql = "SELECT USER_ID FROM Users WHERE USER_NAME = '$myusername' and PASSWORD = '$mypassword'";
+      $sql = "SELECT USER_ID, ADMIN FROM Users WHERE USERNAME = '$myusername' and PASSWORD = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $active = $row['active'];
@@ -23,8 +23,13 @@
          $_SESSION['login_user_id'] = $row["USER_ID"];
          $_SESSION['login_username'] = $myusername;
          
+         if($row["ADMIN"] == 1){
+            header ("HTTP/1.1 301 Moved Permanently");
+            header ("Location: Admin/welcome_admin.php");
+            exit();
+         }
          header ("HTTP/1.1 301 Moved Permanently"); 
-         header ("Location: welcome.php");
+         header ("Location: User/welcome_user.php");
          // header ("Location: http://www.cerclevillemarie.ca/welcome.php"); 
          exit();
       }else {
