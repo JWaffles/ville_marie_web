@@ -22,13 +22,16 @@
     define('DB_DATABASE', 'Ville_Marie');
 */
     
-    $host = "104.207.159.189";
-    $user = "wdrxfxeejk";      
-    $pass = "tmmYwKbR9e";      
-    $db = "wdrxfxeejk";        
-    $port = 3306;
+    // $host = "104.207.159.189";
+    // $user = "wdrxfxeejk";      
+    // $pass = "tmmYwKbR9e";      
+    // $db = "wdrxfxeejk";        
+    // $port = 3306;
     
-    $db = mysqli_connect($host, $user, $pass, $db, $port)or die(mysql_error());
+    // $db = mysqli_connect($host, $user, $pass, $db, $port)or die(mysql_error());
+    
+    $db = mysql_connect( "127.0.0.1:3307", "wdrxfxeejk", "tmmYwKbR9e");
+    mysql_select_db( "wdrxfxeejk", $db);
     
 
 ?>

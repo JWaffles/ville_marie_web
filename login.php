@@ -6,15 +6,17 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         // username and password send from form
         
-        $myusername = mysqli_real_escape_string($db,$_POST['username']);
-        $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+       $myusername = mysql_real_escape_string($_POST['username'], $db);
+        $mypassword = mysql_real_escape_string($_POST['password'], $db);
+      //  $myusername = mysql_real_escape_string($db, $_POST['username']);
+      //  $mypassword = mysql_real_escape_string($db, $_POST['password']);
       
       $sql = "SELECT USER_ID, ADMIN FROM Users WHERE USERNAME = '$myusername' and PASSWORD = '$mypassword'";
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $result = mysql_query($sql, $db);
+      $row = mysql_fetch_array($result,MYSQLI_ASSOC);
       $active = $row['active'];
       
-      $count = mysqli_num_rows($result);
+      $count = mysql_num_rows($result);
       
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
