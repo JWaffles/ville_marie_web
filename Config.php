@@ -26,7 +26,7 @@
     $user = "wdrxfxeejk";      
     $pass = "tmmYwKbR9e";      
     $db = "wdrxfxeejk";        
-    $port = 8082;   
+    $port = 3306;
     
     $db = mysqli_connect($host, $user, $pass, $db, $port)or die(mysql_error());
     
