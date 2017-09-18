@@ -11,8 +11,16 @@
     <body>
         
         <div id="header"></div><br/>
-        <h1>Coming soon!</h1>
+        <h1>Welcome ADMIN!
+        <?php 
+        echo "Login id: " . $_SESSION["login_user_id"] . ".<br/>";
+        echo "Login name: " . $_SESSION["login_username"] . ".<br/>";
+        ?>
+        </h1>
         <!-- TODO: Makes a dropdown selection to display either an activity, a member, or the list of members/activities -->
+        
+        
+        
         
         <div id="footer"></div><br />
 

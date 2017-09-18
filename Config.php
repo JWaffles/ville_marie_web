@@ -33,5 +33,13 @@
     $db = mysql_connect( "127.0.0.1:3307", "wdrxfxeejk", "tmmYwKbR9e");
     mysql_select_db( "wdrxfxeejk", $db);
     
+    // Need to run 2 commands before this can work:
+    // 1.    ssh -fNg -L 3307:127.0.0.1:3306 master_exjecnsphv@104.207.159.189
+    // Then enter the password for master
+    // 2. mysql -h 127.0.0.1 -P 3307 -u wdrxfxeejk -p wdrxfxeejk
+    // Then enter the password for the user
+    // Then this should work. This is only to connect to the Cloudways databse through the Cloud9.io
+    
+    
 
 ?>
